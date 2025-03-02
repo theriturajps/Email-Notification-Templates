@@ -1,4 +1,4 @@
-# Compact Email Notification Templates
+# Email Notification Templates
 
 ## 1. Login Notification
 
