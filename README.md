@@ -1,5 +1,39 @@
 # Email Notification Templates
 
+## 0. Registration Notification
+
+```html
+<div style="max-width:400px; margin:10px auto; font-family:Arial, sans-serif; padding:15px; border:1px solid #eee; border-radius:5px; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
+    <h3 style="color:#333; margin-top:0; margin-bottom:10px;">Welcome to Your Account</h3>
+    <p style="color:#555; margin:5px 0;">Hi ${userData.fullName},</p>
+    <p style="color:#555; margin:5px 0;">Your account has been successfully created:</p>
+    <div style="background:#f8f9fa; padding:10px; border-radius:4px; margin:10px 0;">
+        <p style="color:#555; margin:0; font-size:13px;">
+            <strong>Email:</strong> ${userData.email}<br>
+            <strong>Registered:</strong> ${new Date().toGMTString()}
+        </p>
+    </div>
+    <p style="color:#555; margin:5px 0; font-size:13px;">You can now login to your account using your credentials.</p>
+    <div style="text-align:center; margin:15px 0;">
+        <a href="/login" style="display:inline-block; padding:8px 16px; background:#0066cc; color:white; text-decoration:none; border-radius:3px; font-size:13px;">Login Now</a>
+    </div>
+    <div style="background:#fff8f8; border-left:3px solid #ff3b30; padding:8px; margin:10px 0;">
+        <p style="color:#d32f2f; margin:0; font-size:12px;">
+            <strong>Didn't create this account?</strong> <a href="/support" style="color:#d32f2f;">Contact support</a> immediately.
+        </p>
+    </div>
+    <div style="color:#999; font-size:11px; text-align:center; border-top:1px solid #eee; padding-top:8px; margin-top:15px;">
+        <p style="margin:5px 0;">Automated account notification. Do not reply.</p>
+        <p style="margin:5px 0;">
+            <a href="/account/preferences" style="color:#777; margin:0 5px;">Preferences</a>
+            <a href="/privacy" style="color:#777; margin:0 5px;">Privacy</a>
+            <a href="/help" style="color:#777; margin:0 5px;">Help</a>
+        </p>
+        <p style="margin:5px 0;">© 2025 Your Company. All rights reserved.</p>
+    </div>
+</div>
+```
+
 ## 1. Login Notification
 
 ```html
